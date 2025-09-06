@@ -13,8 +13,21 @@
     </header>
 
     <main>
+
       <section id="activities-container">
-        <h3>Available Activities</h3>
+        <h3>Available Activitie</h3>
+        <div id="filters" class="filters">
+          <input type="text" id="search-input" placeholder="Search by name..." />
+          <select id="schedule-filter">
+            <option value="">All Schedules</option>
+            <option value="Mondays">Mondays</option>
+            <option value="Tuesdays">Tuesdays</option>
+            <option value="Wednesdays">Wednesdays</option>
+            <option value="Thursdays">Thursdays</option>
+            <option value="Fridays">Fridays</option>
+          </select>
+          <button id="clear-filters" type="button">Clear</button>
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
